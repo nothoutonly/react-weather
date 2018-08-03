@@ -1,25 +1,29 @@
 {
-  "name": "react-weather",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "cross-fetch": "^2.2.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-redux": "^5.0.7",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
-    "redux": "^4.0.0",
-    "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "babel-polyfill": "^6.26.0"
-  }
+	"name": "react-weather",
+	"homepage": "https://nothoutonly.github.io/react-weather",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"cross-fetch": "^2.2.2",
+		"react": "^16.4.1",
+		"react-dom": "^16.4.1",
+		"react-redux": "^5.0.7",
+		"react-router-dom": "^4.3.1",
+		"react-scripts": "1.1.4",
+		"redux": "^4.0.0",
+		"redux-logger": "^3.0.6",
+		"redux-thunk": "^2.3.0"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test --env=jsdom",
+		"eject": "react-scripts eject",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -b gh-pages -d build"
+	},
+	"devDependencies": {
+		"babel-polyfill": "^6.26.0",
+		"gh-pages": "^1.2.0"
+	}
 }
